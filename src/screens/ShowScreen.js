@@ -3,10 +3,11 @@ import {View, Text, StyleSheet} from 'react-native'
 
 const showScreen = ({navigation}) => {
     const name = navigation.getParam('name')
+    const text = navigation.getParam('text')
     return (
         <View>
-            <Text>Show Screen</Text>
             <Text>{name}</Text>
+            <Text>{text}</Text>
         </View>
     )
 }
